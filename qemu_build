@@ -1,0 +1,11 @@
+ sudo apt-get install flex
+ sudo apt-get install bison
+ sudo apt-get install libglib2.0-dev
+ sudo apt-get install libpixman-1-dev
+ sudo apt-get install libxext6
+ sudo apt-get install libxrender1 libxtst6 libxi6
+  wget https://download.qemu.org/qemu-2.11.0-rc3.tar.xz
+   tar xvJf qemu-2.11.0-rc3.tar.xz
+   cd qemu-2.11.0-rc3
+    ./configure --target-list=arm-softmmu,arm-linux-user
+     make
