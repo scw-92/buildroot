@@ -1,0 +1,12 @@
+wget http://download.qt.io/archive/qt/5.8/5.8.0/qt-opensource-linux-x64-5.8.0.run
+ sudo apt-get install libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev  -y
+ mkdir qt
+ cp qt-opensource-linux-x64-5.8.0.run qt
+ cd qt
+ chmod 777 qt-opensource-linux-x64-5.8.0.run 
+ sudo apt-get install mesa-common-dev -y
+ sudo apt-get install libglu1-mesa-dev -y 
+ ./qt-opensource-linux-x64-5.8.0.run
+ sudo touch  /usr/lib/x86_64-linux-gnu/qt-default/qtchooser/default.conf
+ sudo echo "/home/`users`/Qt5.8.0/5.8/gcc_64/bin" >> /usr/lib/x86_64-linux-gnu/qt-default/qtchooser/default.conf
+ sudo echo "/usr/lib/x86_64-linux-gnu" >> >> /usr/lib/x86_64-linux-gnu/qt-default/qtchooser/default.conf
