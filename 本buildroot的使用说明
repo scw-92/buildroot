@@ -1,0 +1,10 @@
+本buildroot已经被修改过，编译的QT模块将不会拷贝到output/target目录下，而是会拷贝到TARGET_DIR=/home/aplex/aplex/qt/qt_arm_install这个目录下，
+在使用本buildroot之前，请先在/home/aplex/aplex/qt/qt_arm_install这个目录下创建需要的目录文件，如下列表
+qml/Qt/labs
+qml/QtQuick
+plugins
+plugins/canbus
+//bin/canbusutil
+plugins/imageformats/
+lib/fonts
+qml/QtQuick
